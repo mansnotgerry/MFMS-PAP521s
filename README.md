@@ -1,6 +1,6 @@
-# Municipal Financial Management System (MFMS)
+ Municipal Financial Management System (MFMS)
 
-## PAP521S Project
+PAP521S Project
 
 A modular *Municipal Financial Management System (MFMS)* developed in the *C programming language* as part of the PAP521S project.
 
@@ -8,7 +8,7 @@ The system provides a menu-driven interface for managing key municipal informati
 
 ---
 
-## Table of Contents
+Table of Contents
 
 * [Project Overview](#project-overview)
 * [Objectives](#objectives)
@@ -29,7 +29,7 @@ The system provides a menu-driven interface for managing key municipal informati
 
 ---
 
-## Project Overview
+Project Overview
 
 The Municipal Financial Management System is a command-line application designed to demonstrate how a municipality can manage and organize important operational and financial information using a structured software system.
 
@@ -45,9 +45,7 @@ The main areas of management are:
 
 The project demonstrates the practical application of C programming concepts including functions, structures, arrays, conditional statements, loops, input validation, modular programming, and header files.
 
----
-
-## Objectives
+Objectives
 
 The main objectives of the project are to:
 
@@ -60,20 +58,66 @@ The main objectives of the project are to:
 7. Demonstrate the management of municipal financial and operational information.
 8. Use Git and GitHub for version control and collaborative development.
 
-#ifndef BUDGET_H
-#define BUDGET_H
+Features
 
-#define MAX_BUDGETS 50
+The system provides the following functionality:
 
-typedef struct {
-    char department[30];
-    float allocated;
-    float expenditure;
-} Budget;
+Employee Management
 
-void budgetMenu(Budget budgets[], int *count);
-void addBudget(Budget budgets[], int *count);
-void listBudgets(Budget budgets[], int count);
-void checkBudgetStatus(Budget b);
+* Add employee records
+* Display employee records
+* Remove employee records
+* Manage employee information
 
-#endif
+Budget Management
+
+* Add and manage budget information
+* Display budget records
+* Manage budget allocations
+* Perform relevant budget-related calculations
+
+Supplier Management
+
+* Add supplier records
+* Display supplier information
+* Remove supplier records
+* Manage supplier information
+
+Asset Management
+
+* Add asset records
+* Display asset information
+* Remove asset records
+* Manage municipal asset information
+
+Reports
+
+* Generate system reports
+* Display relevant management information
+* Provide summaries of stored information
+
+---
+
+System Modules
+
+The project is divided into separate modules to make the program easier to understand, maintain, and extend.
+
+| Module          | Purpose                                      |
+| --------------- | -------------------------------------------- |
+| main.c        | Controls program execution and the main menu |
+| employee.c/.h | Employee management functionality            |
+| budget.c/.h   | Budget management functionality              |
+| supplier.c/.h | Supplier management functionality            |
+| asset.c/.h    | Asset management functionality               |
+| reports.c/.h  | Report generation and management             |
+
+---
+
+Technologies Used
+
+* *Language:* C
+* *C Standard:* C99
+* *Compiler:* GCC
+* *Interface:* Command-Line Interface (CLI)
+* *Version Control:* Git
+* *Repository Hosting:* GitHub
