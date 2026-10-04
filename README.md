@@ -10,22 +10,22 @@ The system provides a menu-driven interface for managing key municipal informati
 
 Table of Contents
 
-* [Project Overview](#project-overview)
-* [Objectives](#objectives)
-* [Features](#features)
-* [System Modules](#system-modules)
-* [Technologies Used](#technologies-used)
-* [Project Structure](#project-structure)
-* [Requirements](#requirements)
-* [Compilation and Execution](#compilation-and-execution)
-* [System Usage](#system-usage)
-* [Input Validation](#input-validation)
-* [Testing](#testing)
-* [Version Control](#version-control)
-* [Contributors](#contributors)
-* [Limitations](#limitations)
-* [Future Improvements](#future-improvements)
-* [Academic Information](#academic-information)
+* [Project Overview](project-overview)
+* [Objectives](objectives)
+* [Features](features)
+* [System Modules](system-modules)
+* [Technologies Used](technologies-used)
+* [Project Structure](project-structure)
+* [Requirements](requirements)
+* [Compilation and Execution](compilation-and-execution)
+* [System Usage](system-usage)
+* [Input Validation](input-validation)
+* [Testing](testing)
+* [Version Control](version-control)
+* [Contributors](contributors)
+* [Limitations](limitations)
+* [Future Improvements](future-improvements)
+* [Academic Information](academic-information)
 
 ---
 
@@ -96,7 +96,7 @@ Reports
 * Display relevant management information
 * Provide summaries of stored information
 
----
+
 
 System Modules
 
@@ -149,8 +149,6 @@ MFMS-PAP521s/
 
 
 The .c files contain the implementation of the system functionality, while the .h files contain the corresponding declarations and shared definitions.
-
----
 
  Requirements
 
@@ -205,9 +203,6 @@ Linux/macOS
 bash
 ./MFMS
 
-
----
-
 System Usage
 
 After launching the program, the user is presented with the main menu.
@@ -215,3 +210,141 @@ After launching the program, the user is presented with the main menu.
 The menu provides access to the different sections of the Municipal Financial Management System.
 
 A typical menu structure is:
+
+========================================
+   MUNICIPAL FINANCIAL MANAGEMENT SYSTEM
+========================================
+
+1. Employee Management
+2. Budget Management
+3. Supplier Management
+4. Asset Management
+5. Reports
+6. Exit
+
+
+The user selects an option by entering the corresponding menu number and then follows the instructions provided by the system.
+
+To terminate the program, the user selects the *Exit* option.
+
+Input Validation
+
+The system includes validation mechanisms to reduce invalid input and unexpected program behaviour.
+
+Validation includes, where applicable:
+
+* Checking menu selections
+* Validating numeric input
+* Handling invalid input
+* Checking whether records exist before performing operations
+* Handling empty lists
+* Checking for duplicate identifiers where applicable
+* Preventing invalid operations
+
+
+Testing
+
+The system was tested during development to verify the functionality of the individual modules and the overall program.
+
+Testing focused on:
+
+* Program compilation
+* Main menu navigation
+* Adding records
+* Displaying records
+* Removing records
+* Invalid menu selections
+* Invalid input
+* Empty record lists
+* Duplicate identifiers where applicable
+* Interaction between modules
+* Report generation
+
+
+---
+
+Version Control
+
+Git was used throughout the development process to track changes to the project.
+
+The project repository is hosted on GitHub:
+
+*Repository:* MFMS-PAP521s
+
+*GitHub:*
+https://github.com/mansnotgerry/MFMS-PAP521s
+
+
+
+## Contributors
+
+| Name                          | GitHub Username                            | Contribution        |
+| ---------------               | -----------------                          |  ------------------- |
+| Gareth Nandjedi               | mansnotgerry                                 main.c, suppliers.c/h,readme|
+| Phillip Munenguni 225165848   | 225165848-Munenguni                          assets.c, assets.h and readme         
+| filip ithindi 226032582       | philip6272                                   reports.c, reports.h and readme       
+| Daniel Haimbala 225051869     | 225051869Haimbala                            budgwt.c, budget.h and readme         
+|Karaererue Mberiuana 225148374 |225148374                                     employees.c, employees.h and readme
+
+
+---
+
+Limitations
+
+The current system is a command-line-based academic project and therefore has limitations compared with a production municipal financial management system.
+
+Possible limitations include:
+
+* No graphical user interface
+* Limited data storage functionality depending on the implemented module
+* Designed for academic demonstration rather than production deployment
+* No user authentication system
+* No network-based multi-user functionality
+* Limited security feature
+
+Future Improvements
+
+The system could be extended in the future by implementing:
+
+* A graphical user interface
+* Database integration
+* Persistent data storage
+* User authentication and authorization
+* Advanced financial reporting
+* Search and filtering functionality
+* Data export to CSV or PDF
+* Automated backups
+* Improved security
+* Multi-user access
+* Role-based permissions
+* A web-based interface
+
+
+Academic Information
+
+*Project:* Municipal Financial Management System
+*Course:* PAP521S
+*Programming Language:* C
+*Programming Standard:* C99
+*Project Type:* Academic Software Development Project
+
+This project was developed for academic purposes to demonstrate the application of programming, software development, modular design, data management, and version-control concepts.
+
+
+Repository
+
+The source code and project documentation are available in the project's GitHub repository:
+
+*MFMS-PAP521s*
+
+https://github.com/mansnotgerry/MFMS-PAP521s
+
+
+
+onclusion
+
+The Municipal Financial Management System demonstrates the application of C programming principles to a practical municipal management scenario.
+
+The modular structure allows the different areas of the system to be developed and maintained independently while providing users with a unified command-line interface.
+
+The project also demonstrates the use of Git and GitHub for version control and collaborative software development
