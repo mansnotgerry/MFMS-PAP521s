@@ -121,3 +121,97 @@ Technologies Used
 * *Interface:* Command-Line Interface (CLI)
 * *Version Control:* Git
 * *Repository Hosting:* GitHub
+
+ Project Structure
+
+text
+MFMS-PAP521s/
+│
+├── main.c
+│
+├── employee.c
+├── employee.h
+│
+├── budget.c
+├── budget.h
+│
+├── supplier.c
+├── supplier.h
+│
+├── asset.c
+├── asset.h
+│
+├── reports.c
+├── reports.h
+│
+├── README.md
+└── .gitignore
+
+
+The .c files contain the implementation of the system functionality, while the .h files contain the corresponding declarations and shared definitions.
+
+---
+
+ Requirements
+
+To compile and run the system, the following are required:
+
+* A computer capable of running a C compiler
+* GCC or another C99-compatible compiler
+* Git (optional, for cloning the repository)
+
+ Recommended Environment
+
+* GCC
+* Windows, Linux, or macOS
+* Command Prompt, PowerShell, Terminal, or an equivalent shell
+
+---
+
+ Compilation and Execution
+
+ 1. Clone the repository
+
+bash
+git clone https://github.com/mansnotgerry/MFMS-PAP521s.git
+
+
+Navigate into the project directory:
+
+bash
+cd MFMS-PAP521s
+
+
+ 2. Compile the program
+
+Using GCC:
+
+bash
+gcc -std=c99 -Wall -Wextra -pedantic main.c employee.c budget.c supplier.c asset.c reports.c -o MFMS
+
+
+The compiler flags are used to enforce C99 compatibility and identify potential warnings or programming issues.
+
+ 3. Run the program
+
+ Windows
+
+bash
+MFMS.exe
+
+
+Linux/macOS
+
+bash
+./MFMS
+
+
+---
+
+System Usage
+
+After launching the program, the user is presented with the main menu.
+
+The menu provides access to the different sections of the Municipal Financial Management System.
+
+A typical menu structure is:
