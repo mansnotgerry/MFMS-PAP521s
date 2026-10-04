@@ -280,7 +280,7 @@ https://github.com/mansnotgerry/MFMS-PAP521s
 
 | Name                          | GitHub Username                            | Contribution        |
 | ---------------               | -----------------                          |  ------------------- |
-| Gareth Nandjedi               | mansnotgerry                               | main.c, suppliers.c/h,readme|
+| Gerry Nandjedi               | mansnotgerry                               | main.c, suppliers.c/h,readme|
 | Phillip Munenguni 225165848   | 225165848-Munenguni                        | assets.c, assets.h and readme|         
 | filip ithindi 226032582       | philip6272                                 |  reports.c, reports.h and readme|       
 | Daniel Haimbala 225051869     | 225051869Haimbala                          | budgwt.c, budget.h and readme|         
