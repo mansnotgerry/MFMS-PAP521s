@@ -59,3 +59,21 @@ The main objectives of the project are to:
 6. Implement appropriate input validation and error handling.
 7. Demonstrate the management of municipal financial and operational information.
 8. Use Git and GitHub for version control and collaborative development.
+
+#ifndef BUDGET_H
+#define BUDGET_H
+
+#define MAX_BUDGETS 50
+
+typedef struct {
+    char department[30];
+    float allocated;
+    float expenditure;
+} Budget;
+
+void budgetMenu(Budget budgets[], int *count);
+void addBudget(Budget budgets[], int *count);
+void listBudgets(Budget budgets[], int count);
+void checkBudgetStatus(Budget b);
+
+#endif
