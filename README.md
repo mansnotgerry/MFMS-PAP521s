@@ -105,10 +105,10 @@ The project is divided into separate modules to make the program easier to under
 | Module          | Purpose                                      |
 | --------------- | -------------------------------------------- |
 | main.c        | Controls program execution and the main menu |
-| employee.c/.h | Employee management functionality            |
+| employees.c/.h | Employee management functionality            |
 | budget.c/.h   | Budget management functionality              |
-| supplier.c/.h | Supplier management functionality            |
-| asset.c/.h    | Asset management functionality               |
+| suppliers.c/.h | Supplier management functionality            |
+| assets.c/.h    | Asset management functionality               |
 | reports.c/.h  | Report generation and management             |
 
 ---
